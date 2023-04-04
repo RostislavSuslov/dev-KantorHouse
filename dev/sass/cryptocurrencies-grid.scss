@@ -1,0 +1,108 @@
+.cryptocurrencies-grid {
+    display: grid;
+
+    .cryptocurrency {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 176px;
+        grid-auto-flow: column;
+        grid-template-rows: 95px;
+
+        &:first-child {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            color: $strokes;
+        }
+
+        &:nth-child(even) {
+            background: #10100E;
+            border-radius: 8px;
+        }
+
+        >div {
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+            cursor: default;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            margin-right: 12px;
+        }
+        
+        strong, span {
+            cursor: default;
+        }
+
+        strong {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: $titles;
+            white-space: nowrap;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: $strokes;
+            margin-left: 12px;
+        }
+
+        .crypto-name {
+            padding-left: 40px;
+            min-width: 280px;
+        }
+
+        .crypto-buy,
+        .crypto-sell {
+            min-width: 310px;
+        }
+
+
+        .crypto-spread {
+            min-width: 120px;
+            text-align: center;
+            justify-content: center;
+            padding-right: 30%;
+
+            >span {
+                display: block;
+                margin: initial;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+
+        .rate-risen,
+        .rate-falls,
+        .rate-zero {
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .rate-risen {
+            color: $accent;
+            background: #182709;
+          
+        }
+
+        .rate-zero {
+            color: $titles;
+            background: #353535;           
+        }
+
+        .rate-falls {
+            background: #260404;
+            color: $errors;
+        }
+
+        .crypto-trade {
+            padding-right: 40px;
+        }
+    }
+}

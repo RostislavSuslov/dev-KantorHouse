@@ -1,0 +1,284 @@
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="modal-1" class="modal" data-modal>
+    <div class="modal-content">
+        <h3>дякуємо, <br> що обрали onebit! </h3>
+        <h5>Ми зв'яжемося з вами протягом 15 хвилин,
+            як тільки заявка буде оброблена
+        </h5>
+        <img src="assets/img/form-nice.png" class="modal-img" alt="nice">
+        <button class="btn btn-primary modal-close">чудово</button>
+    </div>
+    @@include('modal-bg.html')
+</div>
+<div id="modal-2" class="modal" data-modal>
+    <div class="modal-content">
+        <h3>нажаль, <br> заявку відхилено! </h3>
+        <h5>Щось пішло не так. Спробуйте відправити заявку ще раз</h5>
+        <img src="assets/img/form-error.png" class="modal-img" alt="error">
+        <button class="btn btn-primary modal-close">спробувати ще раз</button>
+    </div>
+</div>
+<div id="modal-3" class="modal" data-modal>
+    <div class="modal-content">
+        <h3>заявку на верифікацію відправлено</h3>
+        <h5>Ви можете слідкувати за станом заявки на верифікацію у Вашому особистому кабінеті</h5>
+        <img src="assets/img/form-nice.png" class="modal-img" alt="nice">
+        <a href="profile-1.html" class="btn btn-primary modal-close">до особистого кабінету</a>
+
+    </div>
+</div>
+<div id="modal-4" class="modal" data-modal>
+    <div class="modal-content">
+        <h3>вітаємо! ви стали частиною родини Onebit</h3>
+        <h5>Реєстрацію успішно пройдено. Тепер Ви маєте доступ до особистого кабінету</h5>
+        <img src="assets/img/form-nice.png" class="modal-img" alt="nice">
+        <a href="profile-1.html" class="btn btn-primary modal-close">до особистого кабінету</a>
+        <a href="index.html" class="btn btn-secondary modal-close">на головну</a>
+    </div>
+</div>
+<div id="modal-5" class="modal modal-lg" data-modal>
+    <div class="modal-content">
+
+        <form>
+            <h3>дамо відповідь на всі ваші питання</h3>
+            <h5>Перевірте Вашу пошту. Ми відправили створену заявку туди</h5>
+            <div class="custom-input">
+                <input type="text" id="name" name="name">
+                <label for="name">ім’я</label>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="email" name="email">
+                <label for="email">email</label>
+                <div class="hint error">
+                    <div class="hint-item">email вказано некоректно</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="telegram" name="telegram">
+                <label for="telegram">telegram</label>
+            </div>
+            <div class="custom-input">
+                <textarea type="text" class="scroll"></textarea>
+                <label for="telegram">ваше питання</label>
+            </div>
+            <input type="submit" class="btn btn-primary modal-close" value="задати питання">
+        </form>
+    </div>
+</div>
+<div id="modal-6" class="modal" data-modal>
+    <div class="modal-content">
+        <h3>дякуємо, що обрали onebit!</h3>
+        <h5>Перевірте Вашу пошту. Ми відправили створену заявку туди</h5>
+        <img src="assets/img/form-nice.png" class="modal-img" alt="nice">
+        <button class="btn btn-primary modal-close">зрозуміло</button>
+
+    </div>
+</div>
+<div id="modal-7" class="modal modal-xl" data-modal>
+    <div class="modal-content">
+        <a href="index.html" class="accent-column"><img src="assets/img/logo-black.svg" alt="logo"></a>
+        <div class="column">
+            <button class="btn btn-small step-back modal-close"></button>
+            <h3 class="profile-form-title">cтворити акаунт</h3>
+            <div class="profile-form-subtitle">Для успішного проходження реєстрації заповніть поля, вказані нижче</div>
+            <div class="input-row">
+                <div class="custom-input">
+                    <input type="text" id="name" name="name">
+                    <label for="name">ім’я</label>
+                </div>
+                <div class="custom-input">
+                    <input type="text" id="lastname" name="lastname">
+                    <label for="lastname">прізвище</label>
+                </div>
+            </div>
+
+            <div class="custom-input">
+                <input type="tel" id="tel" name="tel" placeholder="(___) ___-__-__" value="+38" maxlength="18" class="focus">
+                <label for="tel">Номер телефона</label>
+                <div class="hint error">
+                    <div class="hint-item">телефон вказано некоректно</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="email-error" name="email-error">
+                <label for="email-error">email</label>
+                <div class="hint error">
+                    <div class="hint-item">email вказано некоректно</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="telegram" name="telegram">
+                <label for="telegram">telegram</label>
+            </div>
+            <div class="custom-input">
+                <input type="password" id="default" name="default">
+                <label for="default">пароль</label>
+                <div class="hint">
+                    <div class="hint-item">8+ символів</div>
+                    <div class="hint-item">рядкова</div>
+                    <div class="hint-item">велика</div>
+                    <div class="hint-item">цифра</div>
+                    <div class="hint-item">спец.символ</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="checkbox" id="conf" name="conf" value="conf">
+                <label for="conf">Я погоджуюся з
+                    <a href="single.hmtl">умовами користування</a>
+                    та
+                    <a href="single.hmtl">політикою конфіденційності</a></label>
+            </div>
+
+            <button class="btn btn-primary modal-close">зареєструватися</button>
+
+            <div class="text-centered">вже маєте акаунт Onebit? <a href="profile-1.html">увійти</a></div>
+        </div>
+    </div>
+</div>
+<div id="modal-8" class="modal modal-xl" data-modal>
+    <div class="modal-content">
+        <a href="index.html" class="accent-column"><img src="assets/img/logo-black.svg" alt="logo"></a>
+        <div class="column"> 
+            <button class="btn btn-small step-back modal-close"></button>
+            <h3 class="profile-form-title">увійти в акаунт</h3>
+            <div class="profile-form-subtitle">Для успішного входу в особистий кабінет заповніть поля, які вказані нижче</div>
+
+            <div class="custom-input">
+                <input type="text" id="name" name="name">
+                <label for="name">email</label>
+            </div>
+            <div class="custom-input">
+                <input type="password" id="default" name="default">
+                <label for="default">пароль</label>
+                <div class="hint">
+                    <div class="hint-item">8+ символів</div>
+                    <div class="hint-item">рядкова</div>
+                    <div class="hint-item">велика</div>
+                    <div class="hint-item">цифра</div>
+                    <div class="hint-item">спец.символ</div>
+                </div>
+            </div>
+
+
+            <button class="btn btn-primary modal-close">зареєструватися</button>
+
+            <div class="text-centered">ще не маєте акаунта Onebit? <a href="profile-1.html">створити акаунт</a> <br> <a href="profile-2.html">забув пароль</a></div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-9" class="modal modal-xl" data-modal>
+    <div class="modal-content">
+        <a href="index.html" class="accent-column"><img src="assets/img/logo-black.svg" alt="logo"></a>
+        <div class="column">
+            <button class="btn btn-small step-back modal-close"></button>
+            <h3 class="profile-form-title">відновлення паролю</h3>
+            <div class="profile-form-subtitle">Введіть вашу дійну електронну адресу для відновлення паролю</div>
+
+            <div class="custom-input">
+                <input type="text" id="name" name="name">
+                <label for="name">email</label>
+            </div>
+
+
+
+            <button class="btn btn-primary modal-close">відновити пароль</button>
+
+            <div class="text-centered">ще не маєте акаунта Onebit? <a href="profile-1.html">створити акаунт</a> <br> <a href="profile-1.html">увійти</a></div>
+        </div>
+    </div>
+</div>
+<!-- The Modal -->
+
+
+
+
+
+<div id="modal-burger" class="modal modal-burger" data-modal>
+    <div class="modal-content">
+        <div class="modal-header">
+            <button class="btn btn-small modal-close"></button>
+
+            <div class="lang-dropdown">
+                <div class="lang-dropdown__top">ua</div>
+                <div class="lang-dropdown__menu">
+                    <ul>
+                        <li><a href="index.html">ua</a></li>
+                        <li><a href="index.html">pl</a></li>
+                        <li><a href="index.html">en</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="country">
+                <div class="country-now">Україна</div>
+                <ul class="sub-menu">
+                    <li><a href="index.html">Україна</a></li>
+                    <li><a href="#">Польша</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="about-page.html">послуги</a>
+                    <ul class="sub-menu">
+                        <li><a href="about-page.html">Про наш фонд</a></li>
+                        <li><a href="template-page.html">Наші партнери</a></li>
+                        <li><a href="reviews.html">Відгуки</a></li>
+                        <li><a href="faq.html">Питання та відповіді (FAQ)</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="template-page.html">Публічна оферта</a></li>
+                        <li><a href="template-page.html">Політика конфіденціальності</a></li>
+                        <li><a href="template-page.html">Установчі документи фонду</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects-category.html">як це працює</a></li>
+                <li><a href="reviews.html">де нас знайти</a></li>
+                <li class="menu-item-has-children">
+                    <a href="faq.html">клієнтам</a>
+                    <ul class="sub-menu">
+                        <li><a href="profile-1.html">профіль</a></li>
+                        <li><a href="profile-2.html">налаштування</a></li>
+                        <li><a href="profile-3.html">історія операцій</a></li>
+                        <li><a href="profile-4.html" class="verification-link">верифікація</a></li>
+                        <li><a href="profile-5.html">бонуси</a></li>
+                        <li><a href="profile-1.html">вийти з акаунту</a></li>
+                        <li><a href="testimonials.html">відгуки</a></li>
+                        <li><a href="faq.html">часті питання</a></li>
+                      
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+<div id="modal-burger-profile" class="modal modal-burger" data-modal>
+    <div class="modal-content">
+        <div class="modal-header">
+            <button class="btn btn-small modal-close"></button>
+            <ul class="list-statuses">
+                <li class="user-status user-status--unverified">неверифікований</li>
+                <li class="user-status user-status--considered">заявка розглядається</li>
+                <li class="user-status user-status--verified show">верифікований</li>
+                <li class="user-status user-status--verification-failed">верифікацію не пройдено</li>
+            </ul>
+
+        </div>
+
+        <nav class="modal-burger__navigation">
+            <ul>
+                <li><a href="profile-1.html">особиста інформація</a></li>
+                <li><a href="profile-2.html">пароль</a></li>
+                <li><a href="profile-3.html">історія операцій</a></li>
+                <li><a href="profile-4.html">верифікація</a></li>
+                <li><a href="profile-5.html">реферальна програма</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn btn-primary">вийти з акаунту</a>
+    </div>
+
+</div>

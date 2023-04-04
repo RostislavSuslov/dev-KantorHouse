@@ -1,0 +1,27 @@
+.advantages-grid {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+.advantage {
+    display: flex;
+    flex-shrink: 1;
+    background: #10100E;
+    border-radius: 15px;
+ 
+    &-text {
+        max-width: 395px;
+        padding: 40px;
+    }
+
+    &-title {
+        margin: 0 0 16px 0;
+    }
+
+    &-subtitle {
+        font-size: 20px;
+        line-height: 1.7;
+        color: $body-text;
+        margin: 0;
+    }
+}

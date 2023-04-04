@@ -1,0 +1,27 @@
+@media screen and (min-width: 768px) {
+    .fiat-pairs__list {
+       
+    
+        &-item {
+          
+            &:nth-child(6n+1),
+            &:nth-child(6n+2){
+                margin: 0;
+            }
+            &:nth-child(6n+3){
+                margin-left: 16.67%;
+            }
+            &:nth-child(6n+4){
+                margin-left: 50%;
+            }
+            &:nth-child(6n+5){
+                margin-left: 8.33%;
+            }
+            &:nth-child(6n+6){
+                margin-left: 33.33%;
+            }
+            
+        }
+    }
+    
+}

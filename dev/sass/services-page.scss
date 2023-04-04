@@ -1,0 +1,21 @@
+.services-page {
+    .banner {
+        margin-bottom: $section-margin;
+    }
+
+    
+    
+    .banner-col-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .banner-col-right {
+        picture {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+}

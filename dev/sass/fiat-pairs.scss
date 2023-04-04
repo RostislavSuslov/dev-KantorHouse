@@ -1,0 +1,48 @@
+.fiat-pairs {
+    .template-title {
+        text-align: left;
+        margin-bottom: 80px;
+    }
+}
+
+.fiat-pairs__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &-item {
+        width: 50%;
+        height: 144px;
+        padding: 15px;
+        display: flex;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: $titles;
+        transition: .3s;
+
+        &:hover {
+            text-decoration: none;
+
+            div {
+                background-color: #10100E;
+                border-color: $accent;
+            }
+        }
+
+        div {
+            transition: .3s;
+            width: 100%;
+            border: 1px solid #242424;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+}

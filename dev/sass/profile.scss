@@ -1,0 +1,341 @@
+.profile-row {
+    display: flex;
+    margin-bottom: 250px;
+
+    form {
+        [type="submit"] {
+            margin-top: 70px;
+        }
+    }
+}
+
+.profile-sidebar {
+    width: 338px;
+    min-width: 338px;
+    margin: 0 152px 60px 0;
+
+    nav {
+
+        background: $inputs;
+    }
+
+    a {
+        display: block;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        color: $titles;
+        padding: 41px 38px;
+        transition: .3s;
+        width: 100%;
+
+        &.active {
+            background-color: $accent;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 23px;
+            color: $inputs;
+
+            span {
+                color: #B1FF5C;
+                background: #42882A;
+            }
+        }
+
+        &:hover {
+            color: $inputs;
+            background-color: #9AF03C;
+            text-decoration: none;
+
+            span {
+                color: #B1FF5C;
+                background: #42882A;
+            }
+        }
+
+        span {
+            transition: .3s;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: $inputs;
+            padding: 1px 5px 3px;
+            background: $accent;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.profile-form-title {
+    display: flex;
+    margin: 0 0 20px;
+    max-width: 705px;
+
+    .list-statuses {
+        margin: 8px 0 0 30px;
+    }
+
+    .user-status {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+}
+
+.profile-form-subtitle {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 705px;
+}
+
+.personal-information {
+    width: 100%;
+
+    .btn {
+        width: 100%;
+        padding: 32px 12px;
+    }
+}
+
+.operations-list {
+    margin-bottom: 60px;
+
+}
+
+.operations-list-title {
+    padding-bottom: 12px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 34px;
+    border-bottom: 1px solid $strokes;
+}
+
+.operation {
+    display: flex;
+    margin-bottom: 30px;
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        padding: 10px;
+
+        &:hover {
+            img {
+                transform: none;
+            }
+        }
+
+        img {
+            width: 36px;
+        }
+    }
+}
+
+.operation-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 24px;
+
+    strong {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: $strokes;
+    }
+}
+
+.operation-spread {
+
+    span {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+    }
+
+    .rate-falls {
+        color: $errors;
+    }
+
+    .rate-risen {
+        color: $accent;
+    }
+
+}
+
+.profile {
+    .radiobuttons-box {
+        &.two-col {
+
+            .checked-box {
+                width: 50%;
+                min-width: initial;
+            }
+        }
+        display: flex;
+        flex-wrap: wrap;
+
+        .component-title {
+            width: 100%;
+        }
+
+        .checked-box {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+   
+}
+
+.profile {
+    .toggle-switch {
+        +label {
+            &:before {
+                margin-top: 8px;
+            }
+
+            span {
+                display: block;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            small {
+                padding-left: 70px;
+                display: block;
+                font-size: 16px;
+                line-height: 20px;
+                color: $body-text;
+            }
+        }
+    }
+}
+
+
+
+
+
+.docks-box {
+    display: flex;
+    margin: 0 -5px;
+
+    .custom-input {
+        margin: 0 15px 20px;
+    }
+
+    .component-title {
+        margin: 0 0 5px 5px;
+    }
+
+    &.radiobuttons-box {
+        .checked-box {
+            padding: 15px;
+            margin: 0;
+            width: 25%;
+            min-width: 210px;
+            text-align: center;
+        }
+    }
+
+    .checked-box {
+
+        [type=radio] {
+            +label {
+                position: relative;
+                height: 104px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                overflow-wrap: anywhere;
+
+
+                &:before {
+                    background: $background;
+                    border: 1px solid #4F4F4F;
+                    border-radius: 12px;
+                    height: 104px;
+                    width: 100%;
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                }
+
+                &:hover {
+                    &::before {
+                        background: #152108;
+                        border: 1px solid $body-text;
+                    }
+                }
+            }
+
+            &:checked {
+                +label:before {
+                    background: #152108;
+                    border: 1px solid $accent;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+#drop-zone {
+    min-height: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed $strokes;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 15px 0 40px;
+
+    &:hover {
+        background: #152108;
+    }
+
+    &.hover {
+        background: #152108;
+    }
+}
+
+.drop-zone__input {
+    display: none;
+}
+
+.drop-zone__prompt {
+    font-size: 16px;
+    line-height: 20px;
+    color: $strokes;
+
+    h6 {
+        margin: 0 0 8px;
+    }
+
+    span {
+        &:last-child {
+            color: $accent;
+        }
+    }
+}

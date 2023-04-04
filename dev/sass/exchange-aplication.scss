@@ -1,0 +1,61 @@
+.exchange-aplication {
+    .form-exchange {
+        margin-left: auto;
+    }
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $section-margin;
+}
+
+.exchange-template {
+    width: 100%;
+    max-width: 705px;
+    margin-right: 128px;
+    flex-shrink: 5;
+}
+
+.service-rules {
+    max-width: 460px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: $strokes;
+}
+
+.exchange-commission {
+    display: none;
+}
+
+.form-exchange {
+    .has-commission {
+        display: flex;
+
+        .exchange-commission {
+            display: flex;
+        }
+
+        .exchange-commission {
+            @extend .exchange-rate
+        }
+
+        .exchange-rate,
+        .exchange-commission {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                margin: 0;
+            }
+        }
+
+        .exchange-commission {
+            margin-left: 100px;
+        }
+    }
+}

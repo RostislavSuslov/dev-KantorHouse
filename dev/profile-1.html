@@ -1,0 +1,46 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper profile">
+   <div class="container">
+    <h1 class="page-title page-title--type-two">профіль</h1>
+    <div class="profile-row">
+        @@include('templates/profile-sidebar.html')
+        <form class="personal-information">
+            <h3 class="profile-form-title">особиста інформація</h3>
+            <div class="profile-form-subtitle">Для повної зручності користування платформою Оnebit радимо заповнити особисту інформацію</div>
+            <div class="custom-input">
+                <input type="text" id="name" name="name">
+                <label for="name">ім’я</label>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="lastname" name="lastname">
+                <label for="lastname">прізвище</label>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="middle-name" name="middle-name">
+                <label for="middle-name">по батькові</label>
+            </div>
+            <div class="custom-input">
+                <input type="tel" id="tel" name="tel" placeholder="(___) ___-__-__" value="+38" maxlength="18" class="focus">
+                <label for="tel">Номер телефона</label>
+                <div class="hint error">
+                    <div class="hint-item">телефон вказано некоректно</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="email-error" name="email-error">
+                <label for="email-error">email</label>
+                <div class="hint error">
+                    <div class="hint-item">email вказано некоректно</div>
+                </div>
+            </div>
+            <div class="custom-input">
+                <input type="text" id="telegram" name="telegram">
+                <label for="telegram">telegram</label>
+            </div>
+            <button class="btn btn-primary" type="submit">зберегти</button>
+        </form>
+    </div>
+   </div>
+</main>
+@@include('templates/footer.html')

@@ -1,0 +1,26 @@
+///fonts///
+$font-family: 'Geometria';
+
+///colors///
+$background: #080807;
+$inputs: #10100E;
+$strokes: #4F4F4F;
+$body-text: #8E938C;
+$titles: #F7FFEE;
+$accent: #B1FF5C;
+$accent-hover: #9AF03C;
+$accent-2: #42882A;
+$errors: #FF3D3D;
+$verification-status: #FFB444;
+
+///margin///
+$section-margin: 250px;  
+$section-margin-mob: 100px;  
+$title-margin: 100px;
+$title-margin-mob: 60px;
+
+@mixin container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

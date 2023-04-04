@@ -1,0 +1,28 @@
+.active-market{
+    @extend .container;
+   margin-bottom: $section-margin;
+
+    &-title {
+        display: flex;
+        margin-bottom: 100px;
+
+        h2 {
+            margin: 0 20px 0 0;
+        }
+
+        .nice-select {
+            min-width: 170px;
+            border-radius: 50px;
+            font-size: 24px;
+            padding: 23px 55px 23px 24px;
+
+            &:after {
+                right: 30px;
+            }
+
+            .option {
+                font-size: 18px;
+            }
+        }
+    }
+}

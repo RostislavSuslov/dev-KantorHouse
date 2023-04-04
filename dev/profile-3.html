@@ -1,0 +1,164 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper profile">
+   <div class="container">
+    <h1 class="page-title page-title--type-two">профіль</h1>
+    <div class="profile-row">
+        <div class="profile-sidebar">
+            <nav>
+                <a href="profile-1.html">особиста інформація</a>
+                <a href="profile-2.html">пароль</a>
+                <a href="profile-3.html" class="active">історія операцій</a>
+                <a href="profile-4.html">верифікація</a>
+                <a href="profile-5.html">реферальна програма <span>soon</span></a>
+            </nav>
+         </div>
+        <div class="personal-information">
+            <h3 class="profile-form-title">історія операцій</h3>
+            <div class="profile-form-subtitle">Тут ви можете спостерігати за історією операцій та тримати свої фінанси під контролем</div>
+            <div class="history-operations">
+               <form class="history-filter">
+                    <div class="custom-input">
+                        <input type="text" id="filter" class="dropdown-input" name="filter" readonly="">
+                        <label for="filter">фільтр</label>
+                        <div class="dropdown-input-values">
+                            <div class="dropdown-input-values__item">день</div>
+                            <div class="dropdown-input-values__item">місяць</div>
+                        </div>
+                    </div>
+               </form>
+
+                <div class="operations-list">
+                    <div class="operations-list-title">грудень 2022</div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-international.svg" class="img-fluid" alt="international"></i>
+                        <div class="operation-name">
+                            <strong>міжнародний переказ</strong>
+                            <span>сьогодні  15:30</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-40 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-bitcoin.svg" class="img-fluid" alt="bitcoin"></i> 
+                        <div class="operation-name">
+                            <strong>продаж bitcoin</strong>
+                            <span>вчора  11:34</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-risen">+150 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-ethereum.svg" class="img-fluid" alt="ethereum"></i>
+                        <div class="operation-name">
+                            <strong>купівля ethereum</strong>
+                            <span>20 грудня 2022  19:52</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-5 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-tether-trc20.svg" class="img-fluid" alt="tether-trc20"></i>
+                        <div class="operation-name">
+                            <strong>купівля tether trc20</strong>
+                            <span>18 грудня 2022  9:28</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-592 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-ethereum.svg" class="img-fluid" alt="ethereum"></i> 
+                        <div class="operation-name">
+                            <strong>продаж ethereum</strong>
+                            <span>12 грудня 2022  17:47</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-risen">+924 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-usd.svg" class="img-fluid" alt="usd"></i>
+                        <div class="operation-name">
+                            <strong>купівля USD</strong>
+                            <span>6 грудня 2022  21:09</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-20 000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="operations-list">
+                    <div class="operations-list-title">листопад 2022</div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-international.svg" class="img-fluid" alt="international"></i>
+                        <div class="operation-name">
+                            <strong>міжнародний переказ</strong>
+                            <span>сьогодні  15:30</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-40 000</span>
+                        </div>
+                    </div>
+
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-bitcoin.svg" class="img-fluid" alt="bitcoin"></i> 
+                        <div class="operation-name">
+                            <strong>продаж bitcoin</strong>
+                            <span>вчора  11:34</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-risen">+150 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-ethereum.svg" class="img-fluid" alt="ethereum"></i>
+                        <div class="operation-name">
+                            <strong>купівля ethereum</strong>
+                            <span>20 грудня 2022  19:52</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-5 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-tether-trc20.svg" class="img-fluid" alt="tether-trc20"></i>
+                        <div class="operation-name">
+                            <strong>купівля tether trc20</strong>
+                            <span>18 грудня 2022  9:28</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-592 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-ethereum.svg" class="img-fluid" alt="ethereum"></i> 
+                        <div class="operation-name">
+                            <strong>продаж ethereum</strong>
+                            <span>12 грудня 2022  17:47</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-risen">+924 000</span>
+                        </div>
+                    </div>
+                    <div class="operation">
+                        <i class="icon"><img src="assets/img/icon-usd.svg" class="img-fluid" alt="usd"></i>
+                        <div class="operation-name">
+                            <strong>купівля USD</strong>
+                            <span>6 грудня 2022  21:09</span>
+                        </div>
+                        <div class="operation-spread">
+                            <span class="rate-falls">-20 000</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary">завантажити більше</button>
+            </div>
+        </div>
+    </div>
+   </div>
+</main>
+@@include('templates/footer.html')

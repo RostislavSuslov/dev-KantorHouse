@@ -1,0 +1,142 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper profile">
+    <div class="container">
+        <h1 class="page-title page-title--type-two">профіль</h1>
+        <div class="profile-row">
+            <div class="profile-sidebar">
+                <nav>
+                    <a href="profile-1.html">особиста інформація</a>
+                    <a href="profile-2.html">пароль</a>
+                    <a href="profile-3.html">історія операцій</a>
+                    <a href="profile-4.html" class="active">верифікація</a>
+                    <a href="profile-5.html">реферальна програма <span>soon</span></a>
+                </nav>
+            </div>
+            <form class="personal-information">
+                <h3 class="profile-form-title">верифікація 
+                <ul class="list-statuses">
+                    <li class="user-status user-status--unverified">неверифікований</li>
+                    <li class="user-status user-status--considered">заявка розглядається</li>
+                    <li class="user-status user-status--verified">верифікований</li>
+                    <li class="user-status user-status--verification-failed show">верифікацію не пройдено</li>
+                </ul>
+            </h3>
+                <div class="profile-form-subtitle">Пройдіть верифікацію особи та отримайте можливість здійснювати обмін фіатних валют та доступ до реферальної програми</div>
+
+                <div class="divide">
+                    <div class="divide-title">країна знаходження</div>
+                    <div class="custom-input">
+                        <input type="text" id="country" class="dropdown-input" name="name" readonly="">
+                        <label for="country">країна</label>
+                        <div class="dropdown-input-values">
+                            <div class="dropdown-input-values__item">Україна</div>
+                            <div class="dropdown-input-values__item">Польша</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divide">
+                    <div class="divide-title">особиста інформація</div>
+                    <div class="custom-input">
+                        <input type="text" id="name" name="name">
+                        <label for="name">ім’я</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="surname" name="surname">
+                        <label for="surname">прізвище</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="middle-name" name="middle-name">
+                        <label for="middle-name">по батькові</label>
+                    </div>
+                    <div class="custom-input">
+                        <input type="text" id="date" name="date" class="date"  placeholder="дд.мм.гггг.">
+                        <label for="date">дата народження</label>
+                    </div>
+                    <div class="component">
+                        <div class="component-title">стать</div>
+                        <div class="custom-input">
+                            <input type="radio" id="female" name="gender" value="female" checked>
+                            <label for="female">жіноча</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">чоловіча</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divide">
+                    <div class="divide-title">адреса проживання</div>
+                    <div class="custom-input">
+                        <input type="text" id="city" name="city">
+                        <label for="city">місто</label>
+                    </div>
+                   
+                    <div class="custom-input">
+                        <input type="text" id="street" name="street">
+                        <label for="street">вулиця</label>
+                    </div>
+             
+                    <div class="component-row">
+                        <div class="custom-input">
+                            <input type="text" id="build" name="build">
+                            <label for="build">будинок</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="text" id="flat" name="flat">
+                            <label for="flat">квартира</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="text" id="index" name="index">
+                            <label for="index">індекс</label>
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="divide">
+                    <div class="divide-title">підтвердження особистості</div>
+                    <div class="component docks-box">
+                        <div class="component-title">тип документу</div>
+                        <div class="custom-input">
+                            <input type="radio" id="passport" name="docks" value="passport" checked>
+                            <label for="passport">паспорт</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="radio" id="international-passport" name="docks" value="international-passport">
+                            <label for="international-passport">закордонний паспорт</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="radio" id="id-card" name="docks" value="id-card">
+                            <label for="id-card">ID-картка</label>
+                        </div>
+                        <div class="custom-input">
+                            <input type="radio" id="drivers-license" name="docks" value="drivers-license">
+                            <label for="drivers-license">посвідчення водія</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="component">
+                    <div class="component-title">завантажте документ</div>
+                    <div id="drop-zone">
+                        <div class="drop-zone__prompt">
+                            <h6>перша сторінка</h6>
+                            <span>перетягніть сюди або</span>  <span>оберіть файл</span>
+                        </div>
+                        <input type="file" name="file" id="file-input" class="drop-zone__input">
+                    </div>
+                </div>
+                <div class="custom-input">
+                    <input type="checkbox" id="validity" class="toggle-switch" name="validity" value="validity">
+                    <label for="validity"> <span>немає терміну дії</span> <small> за умови відсутності терміну дії документу </small></label>
+                </div>
+                <div class="custom-input">
+                    <input type="text" id="validity-date" name="validity-date" class="date"  placeholder="дд.мм.гггг.">
+                    <label for="validity-date">термін дії документу</label>
+                </div>
+                <button class="btn btn-primary" type="submit">продовжити</button>
+            </form>
+        </div>
+    </div>
+</main>
+@@include('templates/footer.html')

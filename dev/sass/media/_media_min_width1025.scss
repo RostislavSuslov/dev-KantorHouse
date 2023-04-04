@@ -1,0 +1,42 @@
+@media (min-width: 1025px) {
+    .burger {
+        display: none;
+    }
+
+    .menu-item-has-children {
+        &.open-menu {
+            .sub-menu {
+                display: flex;
+            }
+        }
+
+    }
+
+    .sub-menu {
+        display: none;
+    }
+
+    .form-exchange {
+        border: 1px solid $strokes;
+        
+        &__value {
+            input {
+                + label {
+                    display: none;
+                }
+            }
+        }
+    }
+    .services-page {
+        background: url(assets/img/decoration-light.png) 50vw 280vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat;
+    }
+    .page-faq,.page-404 {
+        background: url(assets/img/decoration-light.png) 50vw 280vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat;
+    }
+    .where-find, .single {
+        background: url(assets/img/decoration-light.png) 50vw 180vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat; 
+    }
+    .exchange-aplication {
+        background: url(assets/img/decoration-light.png) 30vw -25vh no-repeat;
+    }
+}

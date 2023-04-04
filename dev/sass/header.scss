@@ -1,0 +1,352 @@
+main.wrapper.home {
+    position: relative;
+    z-index: 1; 
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    padding: 50px;
+    
+    margin: 0 auto;
+    transition: .3s;
+    z-index: 20;
+  
+    &::before{
+        content: "";
+        width: 200vw;
+        left: -100vw;
+        height: 100%;
+        background-color: #373737;
+        position: absolute;
+        transition: .3s;
+        z-index: -1;
+    }
+    &.header-fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        backdrop-filter: blur(24.5px);
+        background: transparent;
+        z-index: 5;
+        &::before{
+            backdrop-filter: blur(24.5px);
+            background: transparent;
+        }
+    }
+    &.before-transparent {
+        &:before{
+            backdrop-filter: blur(24.5px);
+            background: transparent;
+        }
+    }
+    .mobile-container {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        max-width: 164px;
+        min-width: 164px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+
+
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    nav {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            li {
+                +li {
+                    margin-left: 20px;
+                }
+
+
+
+                a {
+                    white-space: nowrap;
+                    padding: 0 10px;
+
+                }
+            }
+        }
+    }
+
+    .btn-unregistered-user,
+    .btn-registered-user,
+    .btn-verification-user {
+        margin: -5px 0;
+    }
+}
+
+.menu-item-has-children {
+    position: relative;
+    padding-right: 20px;
+
+    >a {
+        padding-right: 2px;
+    }
+
+    >svg {
+        position: absolute;
+        right: 0;
+        top: 9px;
+        cursor: pointer;
+
+        &:hover {
+            path {
+                stroke: $accent;
+            }
+        }
+    }
+
+    &.open-menu {
+        >svg {
+            path {
+                stroke: $accent;
+            }
+        }
+
+
+
+    }
+}
+
+.sub-menu,
+.lang-dropdown__menu {
+    position: absolute;
+    flex-direction: column;
+    border: 1px solid $strokes;
+    border-radius: 8px;
+    top: 40px;
+    left: 0;
+    padding: 25px;
+    pointer-events: unset;
+    background: #080807;
+
+
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        margin-left: 0;
+
+        &:first-child {
+            a {
+                padding-top: 0;
+            }
+        }
+
+        &:last-child {
+            a {
+                padding: 20px 0 0;
+                border: none;
+            }
+        }
+
+        &:before {
+            display: none;
+        }
+
+        a {
+            border-bottom: 1px solid $strokes;
+            padding: 20px 0;
+            display: block;
+        }
+    }
+
+    .verification-link {
+        display: flex;
+        align-items: center;
+
+        &::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            display: block;
+            background: $errors;
+            border-radius: 50%;
+            margin-left: 8px;
+            transition: .9s;
+        }
+
+        &:hover {
+            &::after {
+                background-color: $accent;
+            }
+        }
+    }
+}
+
+.lang-dropdown__menu {
+    opacity: 0;
+    display: none;
+}
+
+.country {
+    position: relative;
+    margin-left: 30px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+
+    &-now {
+        cursor: pointer;
+        font-weight: 600;
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        margin: auto 0;
+
+        &:hover {
+            color: $accent;
+
+            svg {
+                path {
+                    stroke: $accent;
+                }
+            }
+        }
+
+        >svg {
+            position: absolute;
+            right: 0;
+            top: 9px;
+            cursor: pointer;
+        }
+    }
+
+    &.open-menu {
+        .country-now {
+            color: $accent;
+
+            svg {
+                path {
+                    stroke: $accent;
+                }
+            }
+        }
+
+        .sub-menu {
+            display: flex;
+            opacity: 1;
+            z-index: 10;
+        }
+    }
+}
+
+.lang-dropdown {
+    position: relative;
+    margin: auto 30px auto auto;
+    max-width: 22px;
+
+    .lang-dropdown__top {
+        cursor: pointer;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    &.open-dropdown {
+        .lang-dropdown__top {
+            color: $accent;
+        }
+
+        .lang-dropdown__menu {
+            pointer-events: auto;
+            opacity: 1;
+            display: flex;
+            left: -35px;
+        }
+    }
+
+    .lang-dropdown__menu {
+        padding: 20px;
+        pointer-events: auto;
+
+
+        li {
+            &:first-child {
+                a {
+                    padding-top: 0;
+                }
+            }
+
+            &:last-child {
+                a {
+                    padding-bottom: 0;
+                }
+            }
+
+            a {
+                padding: 8px 0;
+            }
+
+        }
+
+    }
+}
+
+.unregistered-user {
+
+    .btn-registered-user,
+    .btn-verification-user {
+        display: none;
+    }
+}
+
+.registered-user {
+
+    .btn-unregistered-user,
+    .btn-verification-user {
+        display: none;
+    }
+}
+
+.verification-user {
+
+    .btn-unregistered-user,
+    .btn-registered-user {
+        display: none;
+    }
+}

@@ -1,0 +1,141 @@
+body {
+    overflow-x: hidden; /*for header ::before*/
+}
+
+main {
+    margin-top: 40px;
+}
+section {
+    margin-bottom: $section-margin;
+}
+
+.page-title {
+    margin: 40px 0 100px;
+    padding: 0 15px;
+
+    h1,
+    h4 {
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.25;
+        margin: 0;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 1.5;
+        color: $body-text;
+        margin: 30px 0 0;
+    }
+
+    &.page-title--type-two {
+        padding: 0;
+        margin-bottom: 60px;
+        max-width: 705px;
+    }
+}
+
+.template-title {
+    text-align: center;
+    margin-bottom: $title-margin;
+
+    h2 {
+        margin: 0;
+    }
+    h1 {
+        @extend h2;
+    }
+    h4 {
+        margin: 20px auto 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+        color: $body-text;
+        max-width: 705px;
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 0 -14px;
+
+    &-item {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 14px;
+        background: #141810;
+        border-radius: 8px;
+
+        img {
+            transition: .3s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2)
+            }
+        }
+    }
+}
+
+.icon {
+    @extend .socials-item;
+}
+
+.divide {
+    margin-bottom: 40px;
+    &-title {
+        font-size: 20px;
+        line-height: 34px;
+        color: $strokes;
+        padding-bottom: 13px;
+        border-bottom: 1px solid #242424;
+        margin-bottom: 40px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.post-item {
+    margin-bottom: $section-margin;
+}
+
+[style="column-count: 3;"], [style="column-count: 2;"] {
+    text-align: justify;
+}
+img {
+
+    &.alignleft,
+    &.alignright {
+        max-width: 49%;
+    }
+
+    &.alignleft {
+        margin: 0 30px 25px 0;
+        float: left;
+    }
+
+    &.alignright {
+        margin: 0 0 25px 30px;
+        float: right;
+    }
+
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}

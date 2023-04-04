@@ -1,0 +1,211 @@
+.banner {
+    &-col-left {
+        max-width: 820px;
+        width: 100%;
+    }
+
+    &-col-right {
+        width: 540px;
+        min-width: 540px;
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    @include container;
+
+    &-col-left {
+        padding-right: 30px;
+    }
+
+    &-title {
+        font-weight: 600;
+        font-size: 58px;
+        line-height: 1.2;
+        color: $titles;
+        margin-bottom: 30px;
+        max-width: 705px;
+    }
+
+    &-subtitle {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        color: $body-text;
+        margin-bottom: 80px;
+        max-width: 705px;
+    }
+
+    &-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px 40px;
+
+        &__item {
+            min-height: 60px;
+            width: 100%;
+            max-width: 370px;
+            margin: 0 25px 40px;
+            padding-left: 70px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'%3E%3Crect width='50' height='50' rx='6' fill='%2320251B'/%3E%3Cpath d='M17 24.1176L22.9259 30L33 20' stroke='%23B1FF5C' stroke-width='3'/%3E%3C/svg%3E") left center no-repeat;
+        }
+    }
+}
+
+.banner {
+    position: relative;
+
+    &.decoration-light {
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: url(/assets/img/decoration-light.png) 100% 0/contain no-repeat;
+            width: 100%;
+            max-width: 1470px;
+            height: 210%;
+            top: -390px;
+            right: -410px;
+            z-index: -1;
+        }
+    }
+}
+
+
+.form-exchange {
+    background-color: $background;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+
+    &-give {
+        margin-bottom: 30px;
+    }
+
+    &__lable {
+        font-size: 20px;
+        line-height: 25px;
+        color: $body-text;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    &__value {
+        position: relative;
+
+        .nice-select {
+            position: absolute;
+            top: 50%;
+            right: 36px;
+            min-width: 201px;
+            transform: translate(0, -50%);
+            z-index: 0;
+
+            &.open {
+                z-index: 3;
+            }
+        }
+
+        input {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 30px;
+            color: $titles;
+            border: 1px solid $strokes;
+            border-radius: 12px;
+            padding: 48px 250px 48px 36px;
+            background-color: $inputs;
+        }
+    }
+
+    .exchange-rate {
+        margin: 12px 0 40px;
+
+        span {
+            font-size: 20px;
+            line-height: 34px;
+            color: $accent;
+            margin-left: 20px;
+        }
+    }
+
+    .btn[type=submit] {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 48px 40px;
+        border-radius: 12px;
+    }
+}
+
+.nice-select {
+    background: $inputs;
+    border: 1px solid $strokes;
+    border-radius: 8px;
+    padding: 15px 40px 15px 20px;
+    height: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: $titles;
+
+    &:hover {
+        border: 1px solid $body-text;
+    }
+
+    .list {
+        max-height: 284px;
+        min-width: calc(100% + 2px);
+        left: initial;
+        right: 0;
+        overflow-y: auto;
+        border: 1px solid $strokes;
+        border-radius: 8px;
+        padding: 25px 20px;
+        background: $background;
+
+        .option {
+            font-weight: 600;
+            line-height: 23px;
+            border-bottom: 1px solid $strokes;
+            padding: 20px 0 20px 38px;
+            background: left center/24px no-repeat;
+            display: block;
+
+            &:hover,
+            &.selected,
+            &.focus {    
+                background-color: $background;
+                color: $accent;
+            }
+
+            &:first-child {
+                padding-top: 0;
+                background-position: left top;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+                background-position: left bottom;
+            }
+        }
+    }
+}
+
+.select-wrap {
+    .current {
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 36px;
+        background-size: 24px;
+        line-height: 24px;
+        display: block;
+    }
+}

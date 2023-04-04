@@ -1,0 +1,60 @@
+.transfers-grid {
+    @extend .container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: $section-margin;
+
+    .transfer {
+        background: #10100E;
+        border-radius: 16px;
+        padding: 40px 50px 30px;
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            flex-direction: row;
+
+            .transfer-text {
+                margin-right: 40px;
+                max-width: 645px;
+            }
+
+            picture {
+                margin: 0;
+            }
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 50px;
+            margin: 0 0 20px;
+        }
+
+        &-subtitle {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #8E938C;
+            margin: 0 0 40px;
+        }
+
+        &-link {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+            padding-right: 20px;
+            background: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L1 11' stroke='%23B1FF5C' stroke-width='2'/%3E%3C/svg%3E%0A") right 8px no-repeat;
+        }
+
+        picture {
+            margin: 30px auto 0;
+            display: flex;
+            align-items: flex-end;
+            height: 100%;
+        }
+    }
+}
