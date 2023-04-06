@@ -82,8 +82,8 @@
 
         .logo {
             display: flex;
-            max-width: 92px;
-            min-width: 92px;
+            max-width: 173px;
+            min-width: 173px;
         }
 
         &.unregistered-user {
@@ -189,6 +189,7 @@
     }
 
     .lang-dropdown.open-dropdown {
+        
         .lang-dropdown__menu {
             left: initial;
         }

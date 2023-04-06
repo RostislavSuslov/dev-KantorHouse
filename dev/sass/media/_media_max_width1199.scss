@@ -43,6 +43,10 @@
         }
     }
 
+    .lang-dropdown {
+        margin: auto 0 auto 0;
+    }
+    
     .cryptocurrencies-grid {
 
         margin: 0 -15px;
@@ -93,9 +97,6 @@
 
 
 @media screen and (max-width: 1199px) {
-
-
-
 
     .first-screen-slider__slide .banner.decoration-light:before {
         top: -320px;
@@ -173,11 +174,7 @@
     .footer-logo {
         max-width: 240px;
 
-        &__link {
-            img {
-                max-width: 165px;
-            }
-        }
+        
     }
 
     .footer-menu {

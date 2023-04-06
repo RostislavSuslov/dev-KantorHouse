@@ -46,13 +46,12 @@ header {
     .mobile-container {
         display: flex;
         align-items: flex-end;
-        width: 100%;
-        position: relative;
+        width: 100%;    
     }
 
     .logo {
-        max-width: 164px;
-        min-width: 164px;
+           max-width: 277px;
+    min-width: 277px;
         display: flex;
         align-items: center;
 
@@ -276,12 +275,17 @@ header {
 
 .lang-dropdown {
     position: relative;
-    margin: auto 30px auto auto;
-    max-width: 22px;
+    margin: auto 0 auto auto;
+ 
+    display: flex;
 
     .lang-dropdown__top {
         cursor: pointer;
-
+        margin-right: 30px;
+        color: $body-text;
+        &:last-child {
+            margin-right: 0;
+        }
         &:hover {
             color: $accent;
         }
