@@ -560,6 +560,7 @@ textarea {
 
     .modal-header {
         display: flex;
+        flex-direction: row-reverse;
         padding: 12px 20px;
         margin: 0 -20px;
         border-bottom: 1px solid #242424;
@@ -597,8 +598,9 @@ textarea {
     }
 
     .lang-dropdown {
-        margin: auto 0 auto auto;
-
+        margin: auto auto auto 0;
+        font-size: 14px;
+            
         &__top {
             text-transform: uppercase;
         }

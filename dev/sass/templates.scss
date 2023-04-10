@@ -1,10 +1,12 @@
 body {
-    overflow-x: hidden; /*for header ::before*/
+    overflow-x: hidden;
+    /*for header ::before*/
 }
 
 main {
     margin-top: 40px;
 }
+
 section {
     margin-bottom: $section-margin;
 }
@@ -46,9 +48,11 @@ section {
     h2 {
         margin: 0;
     }
+
     h1 {
         @extend h2;
     }
+
     h4 {
         margin: 20px auto 0;
         font-weight: 400;
@@ -58,6 +62,10 @@ section {
         color: $body-text;
         max-width: 705px;
     }
+}
+
+.accent {
+    color: $accent;
 }
 
 .socials {
@@ -94,6 +102,7 @@ section {
 
 .divide {
     margin-bottom: 40px;
+
     &-title {
         font-size: 20px;
         line-height: 34px;
@@ -102,6 +111,7 @@ section {
         border-bottom: 1px solid #242424;
         margin-bottom: 40px;
     }
+
     &:last-child {
         margin-bottom: 0;
     }
@@ -111,9 +121,11 @@ section {
     margin-bottom: $section-margin;
 }
 
-[style="column-count: 3;"], [style="column-count: 2;"] {
+[style="column-count: 3;"],
+[style="column-count: 2;"] {
     text-align: justify;
 }
+
 img {
 
     &.alignleft,
