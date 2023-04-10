@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 .ui {
     padding: 40px;
 
@@ -122,7 +122,7 @@
     }
 
     .medium {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     /**/
@@ -177,6 +177,11 @@ body {
     color: $body-text;
     font-family: $font-family;
     line-height: 1.7;
+
+    overflow-x: hidden;
+    font-weight: 400;
+    /*for header ::before*/
+
 }
 
 h1,
@@ -187,7 +192,7 @@ h5,
 h6 {
     color: $titles;
     margin: 0.5rem 0 1.2em;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.25;
 }
 
@@ -334,7 +339,8 @@ ul {
     }
 }
 
-button,input {
+button,
+input {
     outline: none;
     cursor: pointer;
 }
@@ -359,7 +365,7 @@ input[type="number"]::-webkit-inner-spin-button {
     border-radius: 5px;
     line-height: 1;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     transition: all .3s;
 
     &:hover {
@@ -379,6 +385,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     &.btn-secondary {
         background-color: transparent;
+
         &:hover {
             color: $inputs;
             background: $accent;
@@ -434,12 +441,13 @@ input[type="number"]::-webkit-inner-spin-button {
                 right: -6px;
             }
         }
-        
+
         &.btn-verification-user {
             &:before {
                 background-color: $accent;
             }
         }
+
         &.btn-unregistered-user {
             width: auto;
             min-width: auto;
@@ -454,13 +462,14 @@ input[type="number"]::-webkit-inner-spin-button {
     &.btn-light {
         border: 1px solid $strokes;
         background: transparent;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 23px;
         padding: 12px 16px;
         min-width: initial;
-        &:hover{
-            border: 1px solid  $accent;
+
+        &:hover {
+            border: 1px solid $accent;
             background: $accent;
             color: $inputs;
         }
@@ -478,7 +487,8 @@ input[type="number"]::-webkit-inner-spin-button {
     height: auto;
 }
 
-.custom-input{
+.custom-input {
+
     .show,
     .hide {
         position: absolute;
@@ -488,7 +498,7 @@ input[type="number"]::-webkit-inner-spin-button {
         top: 31px;
         background-position: center;
         background-repeat: no-repeat;
-        
+
     }
 }
 
@@ -501,8 +511,8 @@ input[type="number"]::-webkit-inner-spin-button {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M22.5932 10.8137C23.1356 11.5223 23.1356 12.4789 22.5932 13.1863C20.8847 15.4137 16.7857 20 12.0002 20C7.21461 20 3.11563 15.4137 1.40716 13.1863C1.14326 12.847 1 12.4296 1 12C1 11.5704 1.14326 11.153 1.40716 10.8137C3.11563 8.58629 7.21461 4 12.0002 4C16.7857 4 20.8847 8.58629 22.5932 10.8137V10.8137Z' stroke='%238A9385' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z' stroke='%238A9385' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-.overflow-hidden{
-    overflow: hidden;   
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .component.animation {
@@ -548,16 +558,17 @@ input[type="number"]::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-.scroll::-webkit-scrollbar-corner{
+.scroll::-webkit-scrollbar-corner {
     margin-right: 10px;
 }
+
 ::-webkit-scrollbar-button {
     background-color: transparent;
     display: none;
 }
 
 /* IE */
- 
+
 .scroll {
 
     scrollbar-face-color: $accent;
@@ -581,5 +592,5 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .show {
-    display: block!important;
+    display: block !important;
 }

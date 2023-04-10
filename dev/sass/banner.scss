@@ -20,7 +20,7 @@
     }
 
     &-title {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 58px;
         line-height: 1.2;
         color: $titles;
@@ -114,7 +114,7 @@
         }
 
         input {
-            font-weight: 600;
+            font-weight: 500;
             font-size: 24px;
             line-height: 30px;
             color: $titles;
@@ -150,7 +150,7 @@
     border-radius: 8px;
     padding: 15px 40px 15px 20px;
     height: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 23px;
     color: $titles;
@@ -171,7 +171,7 @@
         background: $background;
 
         .option {
-            font-weight: 600;
+            font-weight: 500;
             line-height: 23px;
             border-bottom: 1px solid $strokes;
             padding: 20px 0 20px 38px;
