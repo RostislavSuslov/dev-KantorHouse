@@ -1,0 +1,41 @@
+/*tab*/
+.tabs{
+    position: relative;
+    .course-update{
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 47px;
+    }
+}
+
+.tabs-nav {
+    margin-bottom: 60px;
+
+}
+
+
+.tab-button {
+    background-color: $inputs;
+    border: none;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.active, &:hover {
+        background-color: $accent;
+        color: $background;
+    }
+}
+
+
+.tab-content {
+    display: none;
+    
+    &.active {
+        display: block;
+    }
+}
+

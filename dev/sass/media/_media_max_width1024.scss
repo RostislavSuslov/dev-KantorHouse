@@ -186,10 +186,121 @@
                 display: none;
             }
         }
+
+        .banner-description {
+            font-size: 18px;
+        }
+    }
+
+    .attention {
+        .attention-text {
+            font-size: 12px;
+        }
+
+        i {
+            line-height: 18px;
+            font-size: 12px;
+            width: 20px;
+        }
+    }
+
+    .exchange-title {
+        margin: 0 0 28px;
+    }
+
+    thead {
+        font-size: 14px;
+    }
+
+    .head-buying,
+    .head-sale {
+        text-align: right;
+    }
+
+    .course-table {
+        .currency {
+            height: 41px;
+
+            &:nth-child(odd) {
+                background: transparent;
+            }
+        }
+    }
+
+    .tabs {
+        .course-update {
+            position: static;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .tabs-nav {
+        margin-bottom: 12px;
+    }
+
+    .tab-button {
+        margin-right: 2px;
+        font-size: 12px;
+        line-height: 15px;
+        min-width: 105px;
+        background: #20251B;
+        padding: 8px 15px;
+    }
+
+    .head-currency {
+        padding-left: 0;
+    }
+
+    .currency-name {
+        padding-left: 0;
+
+        img {
+            display: none;
+        }
+
+        b {
+            font-size: 12px;
+            line-height: 15px;
+            margin: 0 10px 0 0;
+        }
+    }
+
+    .course-table .currency-buying,
+    .course-table .currencies-sale {
+        font-size: 12px;
+        line-height: 15px;
+
+
+        b {
+            justify-content: flex-end;
+
+            &:after {
+                background-size: contain;
+                width: 12px;
+                height: 12px;
+                margin-left: 11px;
+            }
+
+        }
+    }
+
+    .about-page {
+        .banner {
+            margin-bottom: $section-margin-mob;
+
+            &-col-left {
+
+                flex-direction: column-reverse;
+
+            }
+
+        }
     }
 
     .lang-dropdown.open-dropdown {
-        
+
         .lang-dropdown__menu {
             left: initial;
         }
@@ -765,7 +876,7 @@
             .checked-box {
                 padding: 8px;
                 width: 50%;
-      
+
 
                 [type=radio] {
                     +label {
@@ -956,10 +1067,11 @@
         }
     }
 
-     
+
     .post-item {
         margin-bottom: $section-margin-mob;
     }
+
     img {
 
         &.alignleft,
@@ -976,6 +1088,6 @@
     }
 
 
-    
+
 
 }

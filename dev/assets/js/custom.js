@@ -294,9 +294,7 @@ jQuery(document).ready(function($) {
     });
 
 
-    $(".lang-dropdown__top").on("click", function() {
-        $(this).parent().toggleClass("open-dropdown");
-    });
+
 
     $(document).click(function(e) {
         if (!$(e.target).hasClass("open-menu") &&

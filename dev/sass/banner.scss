@@ -55,6 +55,10 @@
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' fill='none'%3E%3Crect width='50' height='50' rx='6' fill='%2320251B'/%3E%3Cpath d='M17 24.1176L22.9259 30L33 20' stroke='%23B1FF5C' stroke-width='3'/%3E%3C/svg%3E") left center no-repeat;
         }
     }
+
+    &-description {
+        font-size: 20px;
+    }
 }
 
 .banner {
@@ -180,7 +184,7 @@
 
             &:hover,
             &.selected,
-            &.focus {    
+            &.focus {
                 background-color: $background;
                 color: $accent;
             }
@@ -207,5 +211,23 @@
         background-size: 24px;
         line-height: 24px;
         display: block;
+    }
+}
+
+.about-page {
+    .banner {
+        margin-bottom: $section-margin;
+
+        &-col-left {
+            max-width: 735px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        &-col-right {
+            width: initial;
+        }
     }
 }
