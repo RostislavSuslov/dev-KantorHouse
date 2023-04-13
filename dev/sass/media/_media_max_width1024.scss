@@ -110,6 +110,12 @@
         }
     }
 
+    .before-transparent:before {
+        border-bottom: 1px solid #242424;
+    }
+    .before-transparent.header-fixed:before {
+        border-bottom: 1px solid transparent;
+    }
     .btn.btn-small.btn-verification-user:before,
     .btn.btn-small.btn-registered-user:before {
         content: "";
