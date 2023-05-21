@@ -1,7 +1,8 @@
 /*tab*/
-.tabs{
+.tabs {
     position: relative;
-    .course-update{
+
+    .course-update {
         position: absolute;
         top: 0;
         right: 0;
@@ -11,9 +12,7 @@
 
 .tabs-nav {
     margin-bottom: 60px;
-
 }
-
 
 .tab-button {
     background-color: $inputs;
@@ -24,18 +23,33 @@
         margin-right: 0;
     }
 
-    &.active, &:hover {
+    &.active,
+    &:hover {
         background-color: $accent;
         color: $background;
     }
 }
 
-
 .tab-content {
     display: none;
-    
+
     &.active {
         display: block;
     }
 }
 
+#particles-js {
+    position: absolute;
+    max-height: 405px;
+    height: 405px;
+    margin: 0 0 -405px 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+// canvas.particles-js-canvas-el {
+//     position: absolute;
+//     top: 0;
+//     left: 0;    z-index: -1;
+// }

@@ -252,7 +252,9 @@ jQuery(document).ready(function($) {
         $('.date').mask('00/00/0000');
     }
 
-
+    if ($('main.home').length) {
+       $('header').addClass('home-page')
+    }
 
 
 

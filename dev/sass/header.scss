@@ -354,3 +354,8 @@ header {
         display: none;
     }
 }
+
+
+ .before-transparent.home-page:before {
+    backdrop-filter: none;
+}
