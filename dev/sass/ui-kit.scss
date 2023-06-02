@@ -475,6 +475,16 @@ input[type="number"]::-webkit-inner-spin-button {
             color: $inputs;
         }
     }
+
+    &.btn-info{
+        background: $inputs;
+        color: $titles;
+        padding: 31.5px 67.6px;
+        border-color: $inputs;
+        &:hover {
+            @extend .btn-secondary;
+        }
+    }
 }
 
 .container {

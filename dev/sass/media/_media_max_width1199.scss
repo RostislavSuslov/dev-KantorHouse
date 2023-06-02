@@ -2,7 +2,7 @@
     header {
         padding: 50px 15px;
     }
-    
+
     .docks-box {
         &.radiobuttons-box {
             .checked-box {
@@ -46,7 +46,7 @@
     .lang-dropdown {
         margin: auto 0 auto 0;
     }
-    
+
     .cryptocurrencies-grid {
 
         margin: 0 -15px;
@@ -155,6 +155,16 @@
         }
     }
 
+    .book {
+        .container {
+            padding: 50px;
+        }
+
+        &-img {
+            right: 50px;
+        }
+    }
+
     .fiat-pairs__list-item {
         height: 130px;
     }
@@ -162,6 +172,7 @@
     .profile-sidebar {
         margin: 0 127px 60px 0;
     }
+
     .footer-row {
         padding: 100px 20px 76px;
 
@@ -174,7 +185,7 @@
     .footer-logo {
         max-width: 240px;
 
-        
+
     }
 
     .footer-menu {

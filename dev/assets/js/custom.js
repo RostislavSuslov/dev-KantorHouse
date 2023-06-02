@@ -253,9 +253,8 @@ jQuery(document).ready(function($) {
     }
 
     if ($('main.home').length) {
-       $('header').addClass('home-page')
+       $('header').addClass('home-page');
     }
-
 
 
     if ($('select').length) {

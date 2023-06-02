@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Geometria';
-    src: url('./assets/fonts/Geometria.ttf') format('OpenType');
+    // src: url('./assets/fonts/Geometria.ttf') format('OpenType'); for dev
+    src: url("../fonts/Geometria.ttf") format("OpenType");
     font-weight: normal; 
     font-style: normal;
     font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
     font-family: 'Geometria';
-    src: url('./assets/fonts/Geometria-Medium.ttf') format('OpenType');
+    // src: url('./assets/fonts/Geometria-Medium.ttf') format('OpenType'); for dev
+    src: url("../fonts/Geometria-Medium.ttf") format("OpenType");
     font-weight: normal; 
     font-style: normal;
     font-display: swap;

@@ -22,6 +22,12 @@
     h6 {
         font-size: 18px;
     }
+    
+    .btn {
+        &.btn-info {
+            padding: 22px 48px;
+        }
+    }
 
     .page-title {
         margin: 20px 0 60px;
@@ -80,7 +86,7 @@
         height: 237px;
         margin: 0 0 -237px 0;
     }
-    
+
     header {
         height: 69px;
         padding: 7px 20px;
@@ -345,8 +351,40 @@
         margin-bottom: 100px;
     }
 
+    .book {
+        .container {
+            padding: 20px 10px 40px;
+            text-align: center;
+            border-radius: 16px;
+        }
 
+        .template-title {
+            margin-bottom: 30px;
+            text-align: center;
+        }
 
+        h2 {
+            font-size: 32px;
+        }
+
+        h4 {
+            font-size: 24px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &-img {
+            display: none;
+        }
+
+        .btn {
+
+            max-width: 450px;
+            width: 100%;
+        }
+    }
+
+  
     .banner {
         &-col-right {
             width: 100%;
@@ -811,6 +849,7 @@
             b {
                 &:nth-child(2) {
                     margin: 0 6px 0 0;
+
                     &:after {
                         content: "";
                         width: 12px;
