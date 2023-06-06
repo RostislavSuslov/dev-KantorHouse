@@ -35,7 +35,7 @@
     }
  
     .single {
-        background: url(assets/img/decoration-light.png) 50vw 180vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat; 
+        background: url(assets/img/decoration-light.png) 50vw 180vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat $background; 
     }
     .exchange-aplication {
         background: url(assets/img/decoration-light.png) 30vw -25vh no-repeat;

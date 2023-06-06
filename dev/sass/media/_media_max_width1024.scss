@@ -25,7 +25,7 @@
     
     .btn {
         &.btn-info {
-            padding: 22px 48px;
+            padding: 25px 48px;
         }
     }
 
@@ -352,29 +352,37 @@
     }
 
     .book {
+        margin-top: 208px;
         .container {
-            padding: 20px 10px 40px;
+            padding: 85px 24px 24px;
             text-align: center;
             border-radius: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .template-title {
-            margin-bottom: 30px;
+            margin-bottom: 12px;
             text-align: center;
-        }
-
-        h2 {
-            font-size: 32px;
+               h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
         }
 
         h4 {
-            font-size: 24px;
+            font-size: 16px;
             text-align: center;
             margin: 0 auto;
         }
+        }
+
+     
 
         &-img {
-            display: none;
+            max-width: 163px;
+            right: 50%;
+            top: -100px;
+            transform: translate(50%, 0);
         }
 
         .btn {
