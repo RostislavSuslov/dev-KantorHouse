@@ -22,10 +22,27 @@
     h6 {
         font-size: 18px;
     }
-    
+
+    main,
+    main.wrapper.home {
+        margin-top: 72px;
+    }
+
     .btn {
         &.btn-info {
             padding: 25px 48px;
+        }
+    }
+
+    .advertisement {
+        padding: 2px 20px;
+        border-radius: 0 0 12px 12px;
+        font-size: 12px;
+        line-height: 1.2;
+        top: 70px;
+
+        a {
+            margin-left: 20px;
         }
     }
 

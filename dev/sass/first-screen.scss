@@ -1,3 +1,21 @@
+
+.advertisement {
+    text-align: center;
+    background-color: $accent;
+    color: $background;
+    padding: 4px 12px;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    a{
+        font-weight: 600;
+        color: $background;
+        margin-left: 41px;
+    }
+}
+
 .first-screen {
     padding: 41px 0 0;
     // margin-bottom: $template-mb;

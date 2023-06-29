@@ -40,4 +40,9 @@
     .exchange-aplication {
         background: url(assets/img/decoration-light.png) 30vw -25vh no-repeat;
     }
+    .exchange {
+        .content-box:before {
+            display: inline;
+        }
+    }
 }

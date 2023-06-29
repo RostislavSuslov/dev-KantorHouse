@@ -1,6 +1,24 @@
+
+.exchange {
+    .content-box:before {
+        content: "Kursy obowiązują dla transakcji powyżej 5 000 PLN.";
+        color: red;
+        font-size: 20px;
+        background-color: #ff000026;
+        padding: 12px;
+        width: calc(100% - 25px);
+        display: inline-block;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.5;
+    }
+}
+    
+ 
 .course-table {
     width: 100%;
-
     border-spacing: 0;
 
     .currency {
