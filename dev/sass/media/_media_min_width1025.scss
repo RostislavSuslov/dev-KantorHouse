@@ -27,6 +27,49 @@
             }
         }
     }
+
+    .exchange {
+   
+    
+        .form-exchange {
+            flex-direction: row;
+            max-width: 100%;
+            align-items: center;
+            margin-top: 167px;
+            border: none;
+            padding: 0;
+    
+            &-give {
+                margin-bottom: 0;
+                margin-right: 30px;
+                width: 33.3333%;
+                max-width: 460px;
+            }
+    
+            &-get {
+                margin-right: 30px;
+                width: 33.3333%;
+                max-width: 460px;
+            }
+    
+            .btn[type=submit] {
+                margin-top: auto;
+                width: 33.3333%;
+                max-width: 460px;
+            }
+            
+            .exchange-info {
+                display: none;
+            }
+
+            .form-exchange__value {
+                input{
+                   background:#141513;
+               }
+            }
+        }
+    }
+
     .services-page {
         background: url(assets/img/decoration-light.png) 50vw 280vh no-repeat,url(assets/img/decoration-light.png) -35vw 10vh no-repeat;
     }

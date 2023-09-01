@@ -1,0 +1,21 @@
+.redirect-list {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 5;
+
+    &:hover {
+
+        .redirect-item {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.redirect-item {
+    display: inline-block;
+    padding: 0px;
+    width: 48px;
+    border-radius: 50%;
+    transition: .7s;
+}

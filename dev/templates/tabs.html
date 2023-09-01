@@ -8,6 +8,9 @@
                 <div class="btn btn-primaty tab-button">крос-курси</div>
             </div>
             <div class="course-update">курс оновлений 25.01.2023 о 14:19</div>
+            <span class="info-text">
+                Kursy obowiązują dla transakcji powyżej 5 000 PLN.                
+            </span>
             <div class="content-box">
                 <div class="tab-content active">
                     @@include('table.html')
@@ -21,7 +24,73 @@
 
             </div>
         </div>
-
+        <form class="form-exchange">
+            <div class="form-exchange-give">
+                <label for="exchange-give"class="form-exchange__lable">
+                    віддаю
+                </label>
+                <div class="form-exchange__value">
+                    <input type="number" id="exchange-give" name="exchange-give">
+                    <select id="select-give">
+                        <option value="bitcoin" data-icon="assets/img/icon-bitcoin.svg">bitcoin</option>
+                        <option value="bitcoin" data-icon="assets/img/icon-panzer.png">Yaga</option>
+                        <option value="ethereum" data-icon="assets/img/icon-ethereum.svg">ethereum</option>
+                        <option value="litecoin" data-icon="assets/img/icon-litecoin.svg">litecoin</option>
+                        <option value="ripple" data-icon="assets/img/icon-ripple.svg">ripple</option>
+                        <option value="monero" data-icon="assets/img/icon-monero.svg">monero</option>
+                        <option value="dogecoin" data-icon="assets/img/icon-dogecoin.svg">dogecoin</option>
+                        <option value="dash" data-icon="assets/img/icon-dash.svg">dash</option>
+                        <option value="zcash" data-icon="assets/img/icon-zcash.svg">zcash</option>
+                        <option value="tether-omni" data-icon="assets/img/icon-tether-omni.svg">tether omni</option>
+                        <option value="tether-trc20" data-icon="assets/img/icon-tether-trc20.svg">tether trc20</option>
+                        <option value="tether-erc20" data-icon="assets/img/icon-tether-erc20.svg">tether erc20</option>
+                        <option value="tether-trc20" data-icon="assets/img/icon-tether-trc20.svg">tether trc20</option>
+                        <option value="stellar" data-icon="assets/img/icon-stellar.svg">stellar</option>
+                        <option value="tron" data-icon="assets/img/icon-tron.svg">tron</option>
+                        <option value="uah" data-icon="assets/img/icon-uah.svg">uah</option>
+                        <option value="usd" data-icon="assets/img/icon-usd.svg">usd</option>
+                        <option value="eur" data-icon="assets/img/icon-eur.svg">eur</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-exchange-get">
+                <label for="exchange-get" class="form-exchange__lable">
+                    отримую
+                </label>
+                <div class="form-exchange__value">
+                    <input type="number" id="exchange-get" name="exchange-get">
+                    <select id="select-get">
+                        <option value="bitcoin" data-icon="assets/img/icon-bitcoin.svg">bitcoin</option>
+                        <option value="bitcoin" data-icon="assets/img/icon-panzer.png">Yaga</option>
+                        <option value="ethereum" data-icon="assets/img/icon-ethereum.svg">ethereum</option>
+                        <option value="litecoin" data-icon="assets/img/icon-litecoin.svg">litecoin</option>
+                        <option value="ripple" data-icon="assets/img/icon-ripple.svg">ripple</option>
+                        <option value="monero" data-icon="assets/img/icon-monero.svg">monero</option>
+                        <option value="dogecoin" data-icon="assets/img/icon-dogecoin.svg">dogecoin</option>
+                        <option value="dash" data-icon="assets/img/icon-dash.svg">dash</option>
+                        <option value="zcash" data-icon="assets/img/icon-zcash.svg">zcash</option>
+                        <option value="tether-omni" data-icon="assets/img/icon-tether-omni.svg">tether omni</option>
+                        <option value="tether-trc20" data-icon="assets/img/icon-tether-trc20.svg">tether trc20</option>
+                        <option value="tether-erc20" data-icon="assets/img/icon-tether-erc20.svg">tether erc20</option>
+                        <option value="tether-trc20" data-icon="assets/img/icon-tether-trc20.svg">tether trc20</option>
+                        <option value="stellar" data-icon="assets/img/icon-stellar.svg">stellar</option>
+                        <option value="tron" data-icon="assets/img/icon-tron.svg">tron</option>
+                        <option value="uah" data-icon="assets/img/icon-uah.svg">uah</option>
+                        <option value="usd" data-icon="assets/img/icon-usd.svg">usd</option>
+                        <option value="eur" data-icon="assets/img/icon-eur.svg">eur</option>
+                    </select>
+                </div>
+            </div>
+            <div class="exchange-info">
+                <div class="exchange-rate">
+                    курс обміну <span>1 USD = 39 UAH</span>
+                </div>
+                <div class="exchange-commission">
+                    комісія <span>0,1%</span>
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="відправити заявку">
+        </form>
     </div>
 </section>
  

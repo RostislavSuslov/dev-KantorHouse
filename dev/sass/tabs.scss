@@ -8,6 +8,19 @@
         right: 0;
         line-height: 47px;
     }
+
+    .info-text {  color: red;
+        font-size: 20px;
+        background-color: rgba(255, 0, 0, 0.1490196078);
+        padding: 12px;
+        width: calc(100% - 25px);
+      
+        border-radius: 5px;
+        margin-bottom: 12px;
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.5;
+      }
 }
 
 .tabs-nav {

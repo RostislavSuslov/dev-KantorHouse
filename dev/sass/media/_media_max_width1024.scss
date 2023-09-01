@@ -240,7 +240,32 @@
             width: 20px;
         }
     }
-
+    .exchange {
+   
+    
+        .form-exchange {
+            border: inherit;
+            padding: 40px;
+            margin: 60px auto 0;
+            border: 1px solid #4F4F4F;
+            &-give {
+ 
+            }
+    
+            &-get {
+            
+            }
+    
+            .btn[type=submit] {
+              
+            }
+            .form-exchange__value {
+                input{
+                 
+               }
+            }
+        }
+    }
     .exchange-title {
         margin: 0 0 28px;
     }
